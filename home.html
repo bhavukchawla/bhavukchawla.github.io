@@ -56,6 +56,7 @@
                                         var long=allInfo.loc.lon;
                                         var latLong = new google.maps.LatLng(lat, long),
                                                 marker = new google.maps.Marker(latLong);
+
                                         // Create a Marker
 //                                        var markerX = new google.maps.Marker({
 //                                            position: location,
@@ -88,6 +89,7 @@
                                     };
 
                             map.setUIToDefault();
+
                             // Check for geolocation support
                             if (navigator.geolocation) {
                                 // Get current position
@@ -148,7 +150,6 @@
                                             var mylocation={
                                                 "loc":{"lat":position.coords.latitude,
                                                 "lon":position.coords.longitude},
-
                                                 "name":"ME",
                                                 "contact":984546865,
                                                 "id": "Me",
@@ -158,6 +159,7 @@
 
                                             };
                                             markOutLocation(mylocation , changeFocus);
+
                                         },
                                         function () {
                                             // Gelocation fallback: Defaults to Stockholm, Sweden
